@@ -1,0 +1,96 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.element {
+  margin-block: 2rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.element img {
+  max-width: 210px;
+  margin-bottom: 10px;
+}
+.element div {
+  height: 450px;
+
+  margin: 0 auto;
+  padding: 10px;
+}
+p {
+  margin: 0 auto;
+  text-align: center;
+}
+@media only screen and (max-width: 350px) {
+  button {
+    margin-top: 10px;
+  }
+  .element img {
+    max-width: 250px;
+  }
+  .element div {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .element {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+  .element img {
+    max-width: 250px;
+  }
+  .element div {
+    height: 450px;
+  }
+}
+@media only screen and (min-width: 401px) and (max-width: 500px) {
+  .element {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .element img {
+    max-width: 160px;
+  }
+  .element div {
+    width: 180px;
+    height: 360px;
+  }
+}
+@media only screen and (min-width: 501px) and (max-width: 709px) {
+  .element {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .element img {
+    max-width: 240px;
+  }
+}
+@media only screen and (min-width: 710px) and (max-width: 810px) {
+  .element {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .element img {
+    max-width: 208px;
+  }
+  .element div {
+    width: 225px;
+    height: 420px;
+  }
+}
+@media only screen and (min-width: 811px) and (max-width: 1024px) {
+  .element {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .element img {
+    max-width: 250px;
+  }
+  .element div {
+    height: 420px;
+  }
+}
